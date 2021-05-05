@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container .whole-div {
+  width: 100%;
+}
+
+.container .whole-div .search-div {
+  width: 100%;
+}
+
+.container .whole-div .search-div h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container .whole-div .search-div form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.container .whole-div .search-div form input {
+  width: 80%;
+  padding: 0.5rem 1rem;
+}
+
+.container .whole-div .search-div form button {
+  padding: 0.5rem 1rem;
+}
+
+.container .whole-div .todo-container {
+}
+
+.container .whole-div .todo-container .todolist {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container .whole-div .todo-container .todolist .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+  background-color: #f1f1f1;
+  padding-left: 0.5rem;
+  margin: 1rem 0;
+}
+
+.container .whole-div .todo-container .todolist .list.completed {
+  text-decoration: line-through;
+}
+
+.container .whole-div .todo-container .todolist .list .buttonGroup {
+  display: inline-block;
+}
+
+.container .whole-div .todo-container .todolist .list .buttonGroup button {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.container .whole-div .todo-container .todolist .list .buttonGroup button i {
+  pointer-events: none;
+}
